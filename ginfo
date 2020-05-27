@@ -38,40 +38,45 @@ DISK=$(df -h --total | grep total |awk '{ printf "" $2 "B\n\n" }')
 
 
 
+./contact
+
+
 
 sleep 1
 echo "${CYN}--------------------------------------------------------------------------${WHI}" 
-echo "${WHI}|                    ${WHI}  G1cu and Aczdreign                                |${WHI}"          
+echo "${WHI}|           ${WHI}  G1cu si Aczdreign va cam dau la muie                       |${WHI}"    
 echo "${CYN}--------------------------------------------------------------------------${WHI}" 
+       
 sleep 1
-echo "${CYN} ->${WHI} Loading Resurces... ${DGRN} 34% ${WHI}"
-echo "${CYN} ->${WHI} Loading Resurces... ${DGRN} 68% ${WHI}"
-echo "${CYN} ->${WHI} Loading Resurces... ${DGRN} 100%${WHI}"
+echo "${CYN} ->${WHI} Se Incarca Resursele... ${DGRN} 40% ${WHI}"
+echo "${CYN} ->${WHI} Se Incarca Resursele... ${DGRN} 60% ${WHI}"
+echo "${CYN} ->${WHI} Se Incarca Resursele... ${DGRN} 100%${WHI}"
 echo ""
 echo ""
-echo "${CYN} ->${WHI} Resource Loaded... ${DGRN} 100%${WHI}"
+echo "${CYN} ->${WHI} Resursele Au Fost Incarcate Cu Succes... ${DGRN} 100%${WHI}"
 echo ""
 sleep 2
-echo "${WHI}# ${CYN}CPU           ${CYN} -> ${WHI}${CPU}${RES}"             #${WHI}"
-echo "${WHI}# ${CYN}CPU CORE      ${CYN} -> ${WHI}${CPUS}${RES}"            #${WHI}"
-echo "${WHI}# ${CYN}Stepping      ${CYN} -> ${WHI}${STEP}${RES}"            #${WHI}"
-echo "${WHI}# ${CYN}Bogomips      ${CYN} -> ${WHI}${BOGO}${RES}"            #${WHI}"
-echo "${WHI}# ${CYN}Ram           ${CYN} -> ${WHI}${ram}MB  [1024MB = 1GB]" #${WHI}"
-echo "${WHI}# ${CYN}GPU           ${CYN} -> ${WHI}${vid}"
-echo "${WHI}# ${CYN}DISK SPACE    ${CYN} -> ${WHI}${DISK}"
-echo "${WHI}# ${CYN}Versiune      ${CYN} -> ${WHI}${VER}"
-echo "${WHI}# ${CYN}Uptime        ${CYN} -> ${WHI}${zile} Zile"
+echo "${WHI}- ${CYN}CPU           ${CYN} -> ${WHI}${CPU}${RES}"             #${WHI}"
+echo "${WHI}- ${CYN}CPU CORE      ${CYN} -> ${WHI}${CPUS}${RES}"            #${WHI}"
+echo "${WHI}- ${CYN}Stepping      ${CYN} -> ${WHI}${STEP}${RES}"            #${WHI}"
+echo "${WHI}- ${CYN}Bogomips      ${CYN} -> ${WHI}${BOGO}${RES}"            #${WHI}"
+echo "${WHI}- ${CYN}Ram           ${CYN} -> ${WHI}${ram}MB  [1024MB = 1GB]" #${WHI}"
+echo "${WHI}- ${CYN}DISK SPACE    ${CYN} -> ${WHI}${DISK}"
+echo "${WHI}- ${CYN}GPU           ${CYN} -> ${WHI}${vid}"
+echo "${WHI}- ${CYN}Uptime        ${CYN} -> ${WHI}${zile} Zile"
+echo "${WHI}- ${CYN}Versiune      ${CYN} -> ${WHI}${VER}"
 sleep 2
 if ((${EUID:-0} || "$(id -u)")); then
 
-  echo "${WHI}#${CYN} Drept de root  -> ${WHI}Nu ai""${WHI}                                 ${WHI}"
+  echo "${WHI}-${CYN} Drept de root  -> ${WHI}Ai vrea tu sa ai (Nu Ai)""${WHI}                                 ${WHI}"
 sleep 3
 else
-echo "${WHI}# ${CYN}Drept de root  -> ${WHI}Ai                                            ${WHI}"
+echo "${WHI}- ${CYN}Drept de root  -> ${WHI}Surprinzator (Ai)                                            ${WHI}"
 fi
-sleep 3
+
+sleep 1
 echo "${CYN}--------------------------------------------------------------------------${WHI}" 
-echo "${WHI}|                   ${WHI}Incepem in 3 Secunde                                 |${WHI}"
+echo "${WHI}|                       ${WHI}ASTEAPTA 3 SECUNDE                               |${WHI}"
 echo "${CYN}--------------------------------------------------------------------------${WHI}" 
 sleep 1
 echo "${CYN} ->${WHI}3${WHI}"
@@ -79,5 +84,4 @@ sleep 1
 echo "${CYN} ->${WHI}2${WHI}"
 sleep 1
 echo "${CYN} ->${WHI}1${WHI}"
-sleep 1
 perl v.py.1 
