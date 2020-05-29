@@ -36,15 +36,9 @@ ore=$(( uptime/60/60%24 ))
 vid=$(lspci | grep VGA | cut -f5- -d ' ') 
 DISK=$(df -h --total | grep total |awk '{ printf "" $2 "B\n\n" }')
 
-
-
-./contact
-
-
-
 sleep 1
 echo "${CYN}--------------------------------------------------------------------------${WHI}" 
-echo "${WHI}|           ${WHI}  G1cu si Aczdreign va cam dau la muie                       |${WHI}"    
+echo "${WHI}|           ${WHI}            AFLV FORTZA                                      |${WHI}"    
 echo "${CYN}--------------------------------------------------------------------------${WHI}" 
        
 sleep 1
