@@ -69,13 +69,3 @@ echo "${WHI}- ${CYN}Drept de root  -> ${WHI}Surprinzator (Ai)                   
 fi
 
 sleep 1
-echo "${CYN}--------------------------------------------------------------------------${WHI}" 
-echo "${WHI}|                       ${WHI}ASTEAPTA 3 SECUNDE                               |${WHI}"
-echo "${CYN}--------------------------------------------------------------------------${WHI}" 
-sleep 1
-echo "${CYN} ->${WHI}3${WHI}"
-sleep 1
-echo "${CYN} ->${WHI}2${WHI}"
-sleep 1
-echo "${CYN} ->${WHI}1${WHI}"
-perl v.py.1 
